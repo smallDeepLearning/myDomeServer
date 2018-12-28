@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 // api
 var hero = require('./api/hero')
 var vacation = require('./api/vacation')
+var attraction = require('./api/attraction')
 
 var app = express();
 
@@ -31,7 +32,7 @@ app.use('/users', usersRouter);
 
 app.use('/api', hero)
 app.use('/api', vacation)
-
+app.use('/api', attraction)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
