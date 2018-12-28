@@ -24,4 +24,4 @@ const heroSchema = mongoose.Schema({
 })
 
 // 导出hero数据模型
-const Hero = module.exports = mongoose.model('hero', heroSchema)
+module.exports = mongoose.model('hero',heroSchema);

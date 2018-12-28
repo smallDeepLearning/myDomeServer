@@ -9,7 +9,7 @@ const router = express.Router()
 const Hero = require('../models/hero')
 
 // 查询所有英雄信息
-router.get('/hero', (req, res) => {
+router.get("/hero", (req, res) => {
 	Hero.find({})
 		.sort({
 			update_at: -1
@@ -89,4 +89,4 @@ router.put('/addpic/:id', (req, res) => {
 		.catch(err => res.json(err))
 })
 
-model.export = router
+module.exports = router
