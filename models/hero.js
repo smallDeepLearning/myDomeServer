@@ -20,7 +20,7 @@ const heroSchema = mongoose.Schema({
 	favourite: String,
 	explain: String
 }, {
-	collection: 'myhero'
+	collection: 'hero'
 })
 
 // 导出hero数据模型
